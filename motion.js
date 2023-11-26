@@ -1,5 +1,13 @@
 export const transition = { type: "spring", duration: 0.8 };
-
+export const popupRotateAnimation = {
+   initial={{ scale: 0 }}
+  animate={{ rotate: 180, scale: 1 }}
+  transition={{
+    type: "spring",
+    stiffness: 260,
+    damping: 20
+  }}
+}
 export const buttonBump = {
   whileHover: { scale: 1.1 },
   whileTap: { scale: 0.9 },
